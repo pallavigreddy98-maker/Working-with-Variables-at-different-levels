@@ -14,8 +14,8 @@ jobs:
     steps:
       - name: Show workflow variables
         env:
-          TEMP_MESSAGE: "Hello from this step"
-        run: echo "$TEMP_MESSAGE"
+          TEMP_MESSAGE: "Hello from this step level variable"
+       
         run: |
           echo "App name: $APP_NAME"
           echo "Node version: $NODE_VERSION"
