@@ -21,3 +21,4 @@ jobs:
           echo "Node version: $NODE_VERSION"
           echo "Environment: $BUILD_ENV"
           echo "$TEMP_MESSAGE"
+          echo "Repo Level Variable: $ {{ vars.MY_REPO_VAR }}"
