@@ -16,4 +16,4 @@ jobs:
         run: |
           echo "App name: $APP_NAME"
           echo "Node version: $NODE_VERSION"
-          run: echo "Environment: $BUILD_ENV"
+          echo "Environment: $BUILD_ENV"
