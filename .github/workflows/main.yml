@@ -1,0 +1,16 @@
+name: Workflow Variables Example
+
+on: push
+
+env:
+  APP_NAME: MyEcommerceApp
+  NODE_VERSION: 18
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show workflow variables
+        run: |
+          echo "App name: $APP_NAME"
+          echo "Node version: $NODE_VERSION"
