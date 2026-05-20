@@ -9,6 +9,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: production
+    
     env:
       BUILD_ENV: production
     steps:
@@ -21,4 +23,5 @@ jobs:
           echo "Node version: $NODE_VERSION"
           echo "Environment: $BUILD_ENV"
           echo "$TEMP_MESSAGE"
-          echo "Repo Level Variable: $ {{ vars.MY_REPO_VAR }}"
+          echo "Repo Level Variable: ${{ vars.MY_REPO_VAR }}"
+          echo "app url is ${{ vars.APPA_URL }}"
