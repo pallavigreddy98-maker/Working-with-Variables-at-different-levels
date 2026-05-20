@@ -9,8 +9,11 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      BUILD_ENV: production
     steps:
       - name: Show workflow variables
         run: |
           echo "App name: $APP_NAME"
           echo "Node version: $NODE_VERSION"
+          run: echo "Environment: $BUILD_ENV"
